@@ -1,4 +1,4 @@
-# Helper Method
+#Helper method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
@@ -7,16 +7,18 @@ end
 WIN_COMBINATIONS = [
   [0,1,2], # Top row
   [3,4,5],  # Middle row6,
-  [6,7,8], #last row
-  #Vertical combinations
+  [6,7,8],
   [0,3,6],
   [1,4,7],
   [2,5,8],
-  #diagonals
   [0,4,8],
   [6,4,2]
   # ETC, an array for each win combination
 ]
+
+board = ["X", "X", "X", "", "", "", " ", " ", " "]
+won?(board)
+board=[0,1,2]||
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
@@ -40,14 +42,21 @@ def won?(board)
   return false
 end
 
-def full?(board)
-  board.each do |item|
-    if item=="" || item==" "
-      return false
-    end
-  end
-  return true
-end
+
+
+       def full_board
+    if board.each ="X"||"O"
+      full?(full_board)
+  def draw_board
+    if board != "won_board" && full?(draw_board)
+      def over
+        if over?(draw_board)
+          def winner
+            if board.each ="X"||"O"
+            end
+          end
+        end
+
 
 def draw?(board)
   if !won?(board) && full?(board)
